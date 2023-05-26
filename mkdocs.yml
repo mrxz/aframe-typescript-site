@@ -1,0 +1,53 @@
+site_name: A-Frame TypeScript
+theme:
+  name: material
+  language: en
+  logo: assets/logo-white.png
+  favicon: assets/favicon.png
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.tabs
+    - header.autohide
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  custom_dir: docs/.overrides
+
+copyright: Copyright &copy; 2023 Noeri Huisman
+nav:
+ - Home: index.md
+ - Getting started:
+   - Creating an app: guides/create/app.md
+   - Creating a library: guides/create/lib.md
+   - Creating typings: guides/create/typings.md
+   - Consuming existing libraries: guides/consuming-lib.md
+ - Reference:
+   - Component: reference/component.md
+ - Changelog: changelog.md
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+
+repo_url: https://github.com/mrxz/aframe-typescript
+extra_css:
+  - stylesheets/extra.css
