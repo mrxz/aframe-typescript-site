@@ -8,10 +8,13 @@ theme:
     repo: fontawesome/brands/github
   features:
     - navigation.tabs
+    - navigation.indexes
+    - navigation.sections
     - header.autohide
     - search.suggest
     - search.highlight
     - content.code.copy
+    - content.tabs.link
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
@@ -34,19 +37,46 @@ copyright: Copyright &copy; 2023 Noeri Huisman
 nav:
  - Home: index.md
  - Getting started:
+   - guides/index.md
    - Creating an app: guides/create/app.md
    - Creating a library: guides/create/lib.md
    - Creating typings: guides/create/typings.md
    - Consuming existing libraries: guides/consuming-lib.md
+   - About:
+     - about/index.md
+     - FAQ: faq.md
+     - Contact: about/contact.md
  - Reference:
    - Component: reference/component.md
- - Changelog: changelog.md
+ - Roadmap:
+   - roadmap/index.md
+   - Changelog: changelog.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/noerihuisman
+    - icon: fontawesome/brands/mastodon
+      link: https://arvr.social/@noerihuisman
+    - icon: material/email
+      link: mailto:aframe-typescript@fern.solutions
+    - icon: fontawesome/brands/github
+      link: https://github.com/mrxz
+
 
 markdown_extensions:
   - attr_list
+  - md_in_html
+  - pymdownx.caret
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
 
 repo_url: https://github.com/mrxz/aframe-typescript
 extra_css:
