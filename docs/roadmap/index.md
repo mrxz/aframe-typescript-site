@@ -29,9 +29,7 @@ The surrounding tooling (generators, docs-generator and vscode-extension) will b
 
 
 ## Past releases
-For past releases, including detailed list of changes, see the [Changelog](changelog).
-
-[changelog]: ./changelog.md
+For past releases, including detailed list of changes, see the [Changelog](../changelog.md).
 
 <style>
     .md-content ul > li {
