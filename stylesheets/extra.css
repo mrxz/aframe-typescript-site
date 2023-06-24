@@ -1,0 +1,22 @@
+:root {
+    --aframe-color: #ef2d5e;
+    --typescript-color: #3178c6;
+    --md-primary-fg-color:        var(--aframe-color);
+    --md-primary-fg-color--light: var(--aframe-color);
+    --md-primary-fg-color--dark:  var(--aframe-color);
+
+
+}
+
+.md-container > nav {
+    background: linear-gradient(130deg, var(--aframe-color) -2%, var(--typescript-color));
+}
+@media screen and (min-width:100em) {
+    .md-container > nav {
+        background: linear-gradient(130deg, var(--aframe-color) -3%, var(--typescript-color));
+    }
+}
+
+header {
+    background: linear-gradient(130deg, var(--aframe-color), var(--typescript-color));
+}
